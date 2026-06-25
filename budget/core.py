@@ -11,7 +11,8 @@ Transaction = Dict[str, Any]
 
 def add_transaction(transactions: List[Transaction], transaction: Transaction) -> List[Transaction]:
     """Add a transaction to the list and return the updated list."""
-    pass
+    transactions.append(transaction)
+    return transactions
 
 
 def get_balance(transactions: List[Transaction]) -> float:
